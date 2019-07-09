@@ -1,4 +1,4 @@
-# [python3-concurrency-mzitu](http://www.madmalls.com/blog/post/python3-concurrency-pics-02/)
+# [python3-concurrency-mzitu](https://madmalls.com/blog/post/python3-concurrency-pics-02/)
 
 [![Python](https://img.shields.io/badge/python-v3.4%2B-blue.svg)](https://www.python.org/)
 [![aiohttp](https://img.shields.io/badge/aiohttp-v3.3.2-brightgreen.svg)](https://aiohttp.readthedocs.io/en/stable/)
@@ -9,29 +9,46 @@
 
 # 1. 进度条
 
-![](http://www.madmalls.com/api/medias/uploaded/async-mzitu-02-75e2c01f.png)
+![](https://madmalls.com/api/medias/uploaded/async-mzitu-02-75e2c01f.png)
 
 
 # 2. 部分截图
 
-![](http://www.madmalls.com/api/medias/uploaded/mzitu-01-e91219db.png)
-![](http://www.madmalls.com/api/medias/uploaded/mzitu-02-bacf231f.png)
+![](https://madmalls.com/api/medias/uploaded/mzitu-01-e91219db.png)
+![](https://madmalls.com/api/medias/uploaded/mzitu-02-bacf231f.png)
 
 > 分析爬取的过程：
 
-![](http://www.madmalls.com/api/medias/uploaded/mzitu-022a41aa.jpg)
+![](https://madmalls.com/api/medias/uploaded/mzitu-022a41aa.jpg)
 
 
-# 3. 使用方法
+# 3. 爬虫系列
 
-## 3.1 下载代码
+- [Python 3 爬虫｜第1章：I/O Models 阻塞/非阻塞 同步/异步](https://madmalls.com/blog/post/io-models/)
+- [Python 3 爬虫｜第2章：Python 并发编程](https://madmalls.com/blog/post/concurrent-programming-for-python/)
+- [Python 3 爬虫｜第3章：同步阻塞下载](https://madmalls.com/blog/post/sequential-download-for-python/)
+- [Python 3 爬虫｜第4章：多进程并发下载](https://madmalls.com/blog/post/multi-process-for-python3/)
+- [Python 3 爬虫｜第5章：多线程并发下载](https://madmalls.com/blog/post/multi-thread-for-python/)
+- [Python 3 爬虫｜第6章：可迭代对象 / 迭代器 / 生成器](https://madmalls.com/blog/post/iterable-iterator-and-generator-in-python/)
+- [Python 3 爬虫｜第7章：协程 Coroutines](https://madmalls.com/blog/post/coroutine-in-python/)
+- [Python 3 爬虫｜第8章：使用 asyncio 模块实现并发](https://madmalls.com/blog/post/asyncio-howto-in-python3/)
+- [Python 3 爬虫｜第9章：使用 asyncio + aiohttp 并发下载](https://madmalls.com/blog/post/aiohttp-howto-in-python3/)
+- [Python 3 爬虫｜第10章：爬取少量妹子图](https://madmalls.com/blog/post/python3-concurrency-pics-01/)
+- [Python 3 爬虫｜第11章：爬取海量妹子图](https://madmalls.com/blog/post/python3-concurrency-pics-02/)
+
+
+# 4. 使用方法
+
+## 此代码库中只有低速同步下载版本，协程高速版本请访问: https://madmalls.com/blog/post/python3-concurrency-pics-02/
+
+## 4.1 下载代码
 
 ```bash
 [root@CentOS ~]# git clone https://github.com/wangy8961/python3-concurrency-pics-02.git
 [root@CentOS ~]# cd python3-concurrency-pics-02/
 ```
 
-## 3.2 准备虚拟环境
+## 4.2 准备虚拟环境
 
 如果你的操作系统是`Linux`:
 
@@ -42,7 +59,7 @@
 
 > `Windows`激活虚拟环境的命令是: `venv3\Scripts\activate`
 
-## 3.3 安装依赖包
+## 4.3 安装依赖包
 
 如果你的操作系统是`Linux`:
 
@@ -56,9 +73,9 @@
 (venv3) C:\Users\wangy> pip install -r requirements-win32.txt
 ```
 
-## 3.4 测试
+## 4.4 测试
 
-由于图片有13万多张，所以测试的时候，你可以指定只下载100个图集来对比`同步下载`、`多线程下载`和`异步下载`的效率区别，**修改以下三个脚本中的`TEST_NUM = 100`**
+由于图片有16万多张，所以测试的时候，你可以指定只下载100个图集来对比`同步下载`、`多线程下载`和`异步下载`的效率区别，**修改以下三个脚本中的`TEST_NUM = 100`**
 
 建议每次测试完，都删除相关目录：
 
@@ -106,27 +123,3 @@ local   0.000GB
 ```python
 (venv3) [root@CentOS python3-concurrency-pics-02]# python asynchronous.py
 ```
-
-# 4. 爬虫系列
-
-## 4.1 理论
-
-- [Python3爬虫系列01 (理论) - I/O Models 阻塞 非阻塞 同步 异步](http://www.madmalls.com/blog/post/io-models/)
-- [Python3爬虫系列02 (理论) - Python并发编程](http://www.madmalls.com/blog/post/concurrent-programming-for-python/)
-- [Python3爬虫系列06 (理论) - 可迭代对象、迭代器、生成器](http://www.madmalls.com/blog/post/iterable-iterator-and-generator-in-python/)
-- [Python3爬虫系列07 (理论) - 协程](http://www.madmalls.com/blog/post/coroutine-in-python/)
-- [Python3爬虫系列08 (理论) - 使用asyncio模块实现并发](http://www.madmalls.com/blog/post/asyncio-howto-in-python3/)
-
-
-## 4.2 实验
-
-- [Python3爬虫系列03 (实验) - 同步阻塞下载](http://www.madmalls.com/blog/post/sequential-download-for-python/)
-- [Python3爬虫系列04 (实验) - 多进程并发下载](http://www.madmalls.com/blog/post/multi-process-for-python3/)
-- [Python3爬虫系列05 (实验) - 多线程并发下载](http://www.madmalls.com/blog/post/multi-thread-for-python/)
-- [Python3爬虫系列09 (实验) - 使用asyncio+aiohttp并发下载](http://www.madmalls.com/blog/post/aiohttp-howto-in-python3/)
-
-
-## 4.3 实战
-
-- [Python3爬虫系列10 (实战) - 爬取妹子图 第一弹](http://www.madmalls.com/blog/post/python3-concurrency-pics-01/)
-- [Python3爬虫系列11 (实战) - 爬取妹子图 第二弹](http://www.madmalls.com/blog/post/python3-concurrency-pics-02/)
