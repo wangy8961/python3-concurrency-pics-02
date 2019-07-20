@@ -15,7 +15,7 @@
 # 2. 部分截图
 
 ![](https://madmalls.com/api/medias/uploaded/mzitu-01-e91219db.png)
-![](https://madmalls.com/api/medias/uploaded/mzitu-02-bacf231f.png)
+![](https://raw.githubusercontent.com/wangy8961/python3-concurrency-pics-02/master/mzitu-min.png)
 
 > 分析爬取的过程：
 
