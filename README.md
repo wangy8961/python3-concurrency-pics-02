@@ -35,6 +35,7 @@
 - [Python 3 爬虫｜第9章：使用 asyncio + aiohttp 并发下载](https://madmalls.com/blog/post/aiohttp-howto-in-python3/)
 - [Python 3 爬虫｜第10章：爬取少量妹子图](https://madmalls.com/blog/post/python3-concurrency-pics-01/)
 - [Python 3 爬虫｜第11章：爬取海量妹子图](https://madmalls.com/blog/post/python3-concurrency-pics-02/)
+- [Python 3 爬虫｜第12章：并发下载大文件 支持断点续传](https://madmalls.com/blog/post/download-large-files/)
 
 
 # 4. 使用方法
